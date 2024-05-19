@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    resize: both;
+    overflow: auto;
+}
+
+
+
+
+.article {
+    grid-column: 2 / 3;
+}
+.header {
+    grid-column: 2 / 4;
+    background-color:#dbeafe;
+
+}
+
+.header img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+
+
+}
+.sideBar {
+    grid-column: 1;
+    background-color: #64748b;
+}
+.nav{
+    grid-column: 2 / 4;
+
+
+
+}
