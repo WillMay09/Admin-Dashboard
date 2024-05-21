@@ -16,7 +16,7 @@ ul{
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1/2fr;
     resize: both;
     overflow: auto;
 }
@@ -113,8 +113,8 @@ ul{
     grid-row: 1 / -4;
     display: grid;
     background-color: #64748b;
-    border-radius: 10%;
-    grid-template-rows: minmax(250px, 2fr) minmax(500px,4fr);
+    border-radius: 10px;
+    grid-template-rows: minmax(100px, 1fr) minmax(200px,2fr);
     gap: 50px;
     
 }
@@ -170,12 +170,7 @@ ul{
     height:25px;
 }
 
-.nav{
-    grid-column: 2 / 4;
 
-
-
-}
 
 .sideBar a{
     text-align: center;
@@ -183,19 +178,42 @@ ul{
 
 }
 
-/* /////////////////////////sideBar//////////////////// */
+/* /////////////////////////Article//////////////////// */
 
 
 .article {
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    background-color: grey;
+    margin: 15px;
+    gap: 15px;
 } 
 
 .article .tile{
 
-    height: 250px;
+    height: 300px;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 10px
+
+
+}
+
+/* /////////////////////////Nav//////////////////// */
+
+.nav{
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color:#dbeafe;
+    padding: 10px;
+
+}
+
+.nav .tile{
+
+    background-color: #71717a;
+    border-radius: 10px;
 
 }
 
